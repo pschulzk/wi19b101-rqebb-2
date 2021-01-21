@@ -19,7 +19,7 @@ namespace wi19b101_rqebb
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class SpecFlowFeature1Feature : object, Xunit.IClassFixture<SpecFlowFeature1Feature.FixtureData>, System.IDisposable
+    public partial class SpecFlowFeature2Feature : object, Xunit.IClassFixture<SpecFlowFeature2Feature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace wi19b101_rqebb
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "SpecFlowFeature1.feature"
+#line 1 "SpecFlowFeature2.feature"
 #line hidden
         
-        public SpecFlowFeature1Feature(SpecFlowFeature1Feature.FixtureData fixtureData, wi19b101_rqebb_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public SpecFlowFeature2Feature(SpecFlowFeature2Feature.FixtureData fixtureData, wi19b101_rqebb_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace wi19b101_rqebb
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "SpecFlowFeature1", "\tTo perform calculations\r\n\tAs a user\r\n\tI want to be told the Sinus of a number", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "SpecFlowFeature2", "\tTo perform calculations\r\n\tAs a user\r\n\tI want to be told the Cosinus of a number", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +80,16 @@ namespace wi19b101_rqebb
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Sinus of a number")]
-        [Xunit.TraitAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Xunit.TraitAttribute("Description", "Sinus of a number")]
+        [Xunit.SkippableFactAttribute(DisplayName="Cosinus of a number")]
+        [Xunit.TraitAttribute("FeatureTitle", "SpecFlowFeature2")]
+        [Xunit.TraitAttribute("Description", "Cosinus of a number")]
         [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void SinusOfANumber()
+        public virtual void CosinusOfANumber()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sinus of a number", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cosinus of a number", null, tagsOfScenario, argumentsOfScenario);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -111,13 +111,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
- testRunner.Given("[SIN] the first number is 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("[COS] the first number is 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
- testRunner.When("[SIN] the Sinus calculation is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("[COS] the Cosinus calculation is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.Then("[SIN] the result should be -0.95892", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("[COS] the result should be 0.28366", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -130,12 +130,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                SpecFlowFeature1Feature.FeatureSetup();
+                SpecFlowFeature2Feature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                SpecFlowFeature1Feature.FeatureTearDown();
+                SpecFlowFeature2Feature.FeatureTearDown();
             }
         }
     }
