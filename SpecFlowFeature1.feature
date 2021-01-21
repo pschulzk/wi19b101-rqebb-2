@@ -1,11 +1,10 @@
 ﻿Feature: SpecFlowFeature1
 	To perform calculations
 	As a user
-	I want to be told Sin of a number
+	I want to be told the Sinus of a number
 
 @mytag
 Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+	Given [SIN] the first number is 5
+	When [SIN] the Sinus calculation is performed
+	Then [SIN] the result should be -0.95892
